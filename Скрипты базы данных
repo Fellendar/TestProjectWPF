@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[Users] (
+    [Id]        INT        IDENTITY (1, 1) NOT NULL,
+    [Name]      NCHAR (10) NULL,
+    [Login]     NCHAR (10) NULL,
+    [Password]  NCHAR (10) NULL,
+    [CompanyID] INT        NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Companies] (
+    [Id]             INT        IDENTITY (1, 1) NOT NULL,
+    [Name]           NCHAR (10) NULL,
+    [ContractStatus] INT        NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
